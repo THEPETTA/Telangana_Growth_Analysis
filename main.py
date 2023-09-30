@@ -471,39 +471,51 @@ st.markdown("""
 In terms of investment patterns within the sectors, there is a lack of consistency. Some sectors, like IT and Real Estate, exhibit significant investments in the same month but with a three-year difference. Conversely, apart from sectors such as thermal power plants, engineering, pharma, research and development (R&D), fertilizers, and related industries, as well as solar and other renewable energy sectors, all other sectors have recently experienced a notable surge in substantial investments. However, the above mentioned sectors showed inconsistent patterns in their investment trends.
 """)
 
-import streamlit as st
-import streamlit.components.v1 as components
+# import streamlit as st
+# import streamlit.components.v1 as components
 
-imageCarouselComponent = components.declare_component("image-carousel-component", path="frontend/public")
+# imageCarouselComponent = components.declare_component("image-carousel-component", path="frontend/public")
 
-imageUrls = [
-    r"p12/line_plot/Investments in Agro-based incl. Cold Storages Sector across Months.png",
-    r"p12/line_plot/Investments in Automobile Sector across Months.png",
-    r"p12/line_plot/Investments in Beverages Sector across Months.png",
-    r"p12/line_plot/Investments in Cement, Cement & Concrete Products, Fly Ash Bricks Sector across Months.png",
-    r"p12/line_plot/Investments in Electrical and Electronic Products Sector across Months.png",
-    r"p12/line_plot/Investments in Engineering Sector across Months.png",
-    r"p12/line_plot/Investments in Fertilizers Organic and Inorganic, Pesticides, Insecticides, and Other Related Sector across Months.png",
-    r"p12/line_plot/Investments in Food Processing Sector across Months.png",
-    r"p12/line_plot/Investments in Granite and Stone Crushing Sector across Months.png",
-    r"p12/line_plot/Investments in Industrial Parks and IT Buildings Sector across Months.png",
-    r"p12/line_plot/Investments in Others Sector across Months.png",
-    r"p12/line_plot/Investments in Paper and Printing Sector across Months.png",
-    r"p12/line_plot/Investments in Pharmaceuticals and Chemicals Sector across Months.png",
-    r"p12/line_plot/Investments in Plastic and Rubber Sector across Months.png",
-    r"p12/line_plot/Investments in R&D Sector across Months.png",
-    r"p12/line_plot/Investments in Real Estate, Industrial Parks and IT Buildings Sector across Months.png",
-    r"p12/line_plot/Investments in Solar and Other Renewable Energy Sector across Months.png",
-    r"p12/line_plot/Investments in Textiles Sector across Months.png",
-    r"p12/line_plot/Investments in Thermal Power Plant Sector across Months.png",
-    r"p12/line_plot/Investments in Wood and Leather Sector across Months.png"
+# imageUrls = [
+#     r"p12/line_plot/Investments in Agro-based incl. Cold Storages Sector across Months.png",
+#     r"p12/line_plot/Investments in Automobile Sector across Months.png",
+#     r"p12/line_plot/Investments in Beverages Sector across Months.png",
+#     r"p12/line_plot/Investments in Cement, Cement & Concrete Products, Fly Ash Bricks Sector across Months.png",
+#     r"p12/line_plot/Investments in Electrical and Electronic Products Sector across Months.png",
+#     r"p12/line_plot/Investments in Engineering Sector across Months.png",
+#     r"p12/line_plot/Investments in Fertilizers Organic and Inorganic, Pesticides, Insecticides, and Other Related Sector across Months.png",
+#     r"p12/line_plot/Investments in Food Processing Sector across Months.png",
+#     r"p12/line_plot/Investments in Granite and Stone Crushing Sector across Months.png",
+#     r"p12/line_plot/Investments in Industrial Parks and IT Buildings Sector across Months.png",
+#     r"p12/line_plot/Investments in Others Sector across Months.png",
+#     r"p12/line_plot/Investments in Paper and Printing Sector across Months.png",
+#     r"p12/line_plot/Investments in Pharmaceuticals and Chemicals Sector across Months.png",
+#     r"p12/line_plot/Investments in Plastic and Rubber Sector across Months.png",
+#     r"p12/line_plot/Investments in R&D Sector across Months.png",
+#     r"p12/line_plot/Investments in Real Estate,Industrial Parks and IT Buildings Sector across Months.png",
+#     r"p12/line_plot/Investments in Solar and Other Renewable Energy Sector across Months.png",
+#     r"p12/line_plot/Investments in Textiles Sector across Months.png",
+#     r"p12/line_plot/Investments in Thermal Power Plant Sector across Months.png",
+#     r"p12/line_plot/Investments in Wood and Leather Sector across Months.png"
+# ]
+
+# selectedImageUrl = imageCarouselComponent(imageUrls=imageUrls, height=200)
+
+# if selectedImageUrl is not None:
+#     st.image(selectedImageUrl)
+
+
+image_urls = [
+    "frontend/public/p12/line_plot/Investments in Industrial Parks and IT Buildings Sector across Months.png",
+    "frontend/public/p12/line_plot/Investments in Real Estate,Industrial Parks and IT Buildings Sector across Months.png"
 ]
+images_per_row = 2
+for i in range(0, len(image_urls), images_per_row):
+    columns = st.columns(images_per_row)
 
-selectedImageUrl = imageCarouselComponent(imageUrls=imageUrls, height=200)
-
-if selectedImageUrl is not None:
-    st.image(selectedImageUrl)
-
+    for j in range(i, min(i + images_per_row, len(image_urls))):
+        with columns[j - i]:
+            st.image(image_urls[j], use_column_width=True)
 
 st.markdown('''
 <p style="font-size: 50px; font-weight: bold; text-align: center; text-decoration: underline;">Secondary Questions</p>
