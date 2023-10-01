@@ -483,26 +483,27 @@ import streamlit.components.v1 as components
 imageCarouselComponent = components.declare_component("image-carousel-component", path="./")
 
 imageUrls = [
-    r"p12/line_plot/Investments in Agro-based incl. Cold Storages Sector across Months.png",
-    r"p12/line_plot/Investments in Automobile Sector across Months.png",
-    r"p12/line_plot/Investments in Beverages Sector across Months.png",
-    r"p12/line_plot/Investments in Cement, Cement & Concrete Products, Fly Ash Bricks Sector across Months.png",
-    r"p12/line_plot/Investments in Electrical and Electronic Products Sector across Months.png",
-    r"p12/line_plot/Investments in Engineering Sector across Months.png",
-    r"p12/line_plot/Investments in Fertilizers Organic and Inorganic, Pesticides, Insecticides, and Other Related Sector across Months.png",
-    r"p12/line_plot/Investments in Food Processing Sector across Months.png",
-    r"p12/line_plot/Investments in Granite and Stone Crushing Sector across Months.png",
-    r"p12/line_plot/Investments in Industrial Parks and IT Buildings Sector across Months.png",
-    r"p12/line_plot/Investments in Others Sector across Months.png",
-    r"p12/line_plot/Investments in Paper and Printing Sector across Months.png",
-    r"p12/line_plot/Investments in Pharmaceuticals and Chemicals Sector across Months.png",
-    r"p12/line_plot/Investments in Plastic and Rubber Sector across Months.png",
-    r"p12/line_plot/Investments in R&D Sector across Months.png",
-    r"p12/line_plot/Investments in Real Estate,Industrial Parks and IT Buildings Sector across Months.png",
-    r"p12/line_plot/Investments in Solar and Other Renewable Energy Sector across Months.png",
-    r"p12/line_plot/Investments in Textiles Sector across Months.png",
-    r"p12/line_plot/Investments in Thermal Power Plant Sector across Months.png",
-    r"p12/line_plot/Investments in Wood and Leather Sector across Months.png"
+r"p12/Investments in Agro based incl Cold Storages Sector across Months.png",
+r"p12/Investments in Automobile Sector across Months.png",
+r"p12/Investments in Beverages Sector across Months.png",
+r"p12/Investments in Cement, Cement & Concrete Products, Fly Ash Bricks Sector across Months.png",
+r"p12/Investments in Engineering Sector across Months.png",
+r"p12/Investments in Food Processing Sector across Months.png",
+r"p12/Investments in Electrical and Electronic Products Sector across Months.png",
+r"p12/Investments in Fertlizers Organic and Inorganic,Pesticides,Insecticides, and Other Related Sector across Months.png",
+r"p12/Investments in Granite and Stone Crushing Sector across Months.png",
+r"p12/Investments in Industrial Parks and IT Buildings Sector across Months.png",
+r"p12/Investments in Paper and Printing Sector across Months.png",
+r"p12/Investments in Others Sector across Months.png",
+r"p12/Investments in Pharmaceuticals and Chemicals Sector across Months.png",
+r"p12/Investments in R&D Sector across Months.png",
+r"p12/Investments in Real Estate,Industrial Parks and IT Buildings Sector across Months.png",
+r"p12/Investments in Solar and Other Renewable Energy Sector across Months.png",
+r"p12/Investments in Textiles Sector across Months.png",
+r"p12/Investments in Thermal Power Plant Sector across Months.png",
+r"p12/Investments in Plastic and Rubber Sector across Months.png",
+r"p12/Investments in Wood and Leather Sector across Months.png"
+
 ]
 
 selectedImageUrl = imageCarouselComponent(imageUrls=imageUrls, height=200)
@@ -655,3 +656,4 @@ st.markdown('''
 st.markdown('''
 <p id="usg" style="font-size: 50px; font-weight: bold; text-align: center; text-decoration: underline;">Thank you</p>
 ''', unsafe_allow_html=True)
+
