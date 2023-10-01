@@ -4,6 +4,7 @@ import streamlit.components.v1 as components
 # Page layout
 st.set_page_config(layout="wide")
 st.title("Unlocking Telangana's Potential: Unveiling Growth Patterns and Delivering Key Insights to the Government")
+st.markdown('''<p style = "text-align: right"><i>Prasanna Phanindran S</i></p>''', unsafe_allow_html=True)
 st.subheader("Codebasics Resume Project Challenge #7")
 
 st.header("About the Project:")
