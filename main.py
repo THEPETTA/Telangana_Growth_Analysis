@@ -483,26 +483,26 @@ import streamlit.components.v1 as components
 imageCarouselComponent = components.declare_component("image-carousel-component", path="./")
 
 imageUrls = [
-"p12/Investments in Agro based incl Cold Storages Sector across Months.png",
-"p12/Investments in Automobile Sector across Months.png",
-"p12/Investments in Beverages Sector across Months.png",
-"p12/Investments in Cement, Cement & Concrete Products, Fly Ash Bricks Sector across Months.png",
-"p12/Investments in Engineering Sector across Months.png",
-"p12/Investments in Food Processing Sector across Months.png",
-"p12/Investments in Electrical and Electronic Products Sector across Months.png",
-"p12/Investments in Fertlizers Organic and Inorganic,Pesticides,Insecticides, and Other Related Sector across Months.png",
-"p12/Investments in Granite and Stone Crushing Sector across Months.png",
-"p12/Investments in Industrial Parks and IT Buildings Sector across Months.png",
-"p12/Investments in Paper and Printing Sector across Months.png",
-"p12/Investments in Others Sector across Months.png",
-"p12/Investments in Pharmaceuticals and Chemicals Sector across Months.png",
-"p12/Investments in R&D Sector across Months.png",
-"p12/Investments in Real Estate,Industrial Parks and IT Buildings Sector across Months.png",
-"p12/Investments in Solar and Other Renewable Energy Sector across Months.png",
-"p12/Investments in Textiles Sector across Months.png",
-"p12/Investments in Thermal Power Plant Sector across Months.png",
-"p12/Investments in Plastic and Rubber Sector across Months.png",
-"p12/Investments in Wood and Leather Sector across Months.png"
+"p12/a.png",
+"p12/b.png",
+"p12/c.png",
+"p12/d.png",
+"p12/e.png",
+"p12/f.png",
+"p12/g.png",
+"p12/h.png",
+"p12/i.png",
+"p12/j.png",
+"p12/k.png",
+"p12/l.png",
+"p12/m.png",
+"p12/n.png",
+"p12/o.png",
+"p12/p.png",
+"p12/q.png",
+"p12/r.png",
+"p12/s.png",
+"p12/t.png"
 
 ]
 
